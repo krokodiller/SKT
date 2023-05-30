@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogInputAreaAndAnomaly</class>
+ <widget class="QDialog" name="DialogInputAreaAndAnomaly">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>908</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>908</width>
+    <height>694</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>908</width>
+    <height>694</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Ввод области и аномалии</string>
+  </property>
+  <widget class="QGroupBox" name="groupBoxGrid">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>381</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Параметры сетки</string>
+   </property>
+   <widget class="QGroupBox" name="groupBoxCoords">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>191</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Координаты</string>
+    </property>
+    <widget class="QLineEdit" name="lineEditZ1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditX2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>50</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelX">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMax">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Максимум</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditY2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>90</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditZ2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>130</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelMin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Минимум</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditY1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditX1">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelY">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelZ">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Z:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxBlocks">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>151</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Количество блоков</string>
+    </property>
+    <widget class="QLineEdit" name="lineEditZBlocks">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelXBlocks">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditYBlocks">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditXBlocks">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelYBlocks">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelZBlocks">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>21</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Z:</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxAnomaly">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>330</y>
+     <width>511</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Аномалии</string>
+   </property>
+   <widget class="QTextEdit" name="textEditInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>231</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-100 100&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-100000 100000&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-200 -100&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1 0 0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditHelp">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>40</y>
+      <width>241</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Справка по вводу аномалий&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;N &lt;span style=&quot; font-style:italic;&quot;&gt;//количество аномалий&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;// далее N записей типа:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;X1 X2 &lt;span style=&quot; font-style:italic;&quot;&gt;//координаты по X&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Y1 Y2 &lt;span style=&quot; font-style:italic;&quot;&gt;//координаты по Y&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Z1 Z2 &lt;span style=&quot; font-style:italic;&quot;&gt;//координаты по Z&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;xp yp zp &lt;span style=&quot; font-style:italic;&quot;&gt;//? значения намагниченности по x y z&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxRecievers">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>540</y>
+     <width>381</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Приёмники</string>
+   </property>
+   <widget class="QSpinBox" name="spinBoxNRecievers">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>91</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1000000</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelNRecievers">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Количество
+приёмников:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelBeginRecievers">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Начало</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelEndRecievers">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>100</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Конец</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditRecieversBeginX">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditRecieversEndX">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>100</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelReieversX">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>30</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSave">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>620</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOpen">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>620</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Загрузить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonRedraw">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>620</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Перерисовать</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOk">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>620</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ОК</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPixmap">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>861</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditX1</tabstop>
+  <tabstop>lineEditX2</tabstop>
+  <tabstop>lineEditY1</tabstop>
+  <tabstop>lineEditY2</tabstop>
+  <tabstop>lineEditZ1</tabstop>
+  <tabstop>lineEditZ2</tabstop>
+  <tabstop>lineEditXBlocks</tabstop>
+  <tabstop>lineEditYBlocks</tabstop>
+  <tabstop>lineEditZBlocks</tabstop>
+  <tabstop>spinBoxNRecievers</tabstop>
+  <tabstop>lineEditRecieversBeginX</tabstop>
+  <tabstop>lineEditRecieversEndX</tabstop>
+  <tabstop>textEditInput</tabstop>
+  <tabstop>textEditHelp</tabstop>
+  <tabstop>pushButtonSave</tabstop>
+  <tabstop>pushButtonOpen</tabstop>
+  <tabstop>pushButtonRedraw</tabstop>
+  <tabstop>pushButtonOk</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
